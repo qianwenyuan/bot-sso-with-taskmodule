@@ -61,7 +61,7 @@ export class TeamsBot extends TeamsActivityHandler {
         txt = removedMentionText.toLowerCase().replace(/\n|\r/g, "").trim();
       }
 
-      const members = this.multitask(context);
+      //const members = this.multitask(context);
 
       // Trigger command by IM text
       await CommandsHelper.triggerCommand(txt, {
@@ -69,7 +69,7 @@ export class TeamsBot extends TeamsActivityHandler {
         ssoDialog: this.dialog,
         dialogState: this.dialogState,
         likeCount: this.likeCountObj,
-        members: members
+        //members: members
       });
 
       // By calling next() you ensure that the next BotHandler is run.
