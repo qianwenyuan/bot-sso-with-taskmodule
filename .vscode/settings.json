@@ -1,0 +1,6 @@
+{
+    "debug.onTaskErrors": "abort",
+    "search.exclude": {
+        "**/node_modules": false
+    },
+}
