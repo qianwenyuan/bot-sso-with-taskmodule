@@ -1,2 +1,3 @@
 1. in file `\bot\commands\showUserProfile.ts`:
-    
+
+2. [nodemon] app crashed - waiting for file changes before starting...

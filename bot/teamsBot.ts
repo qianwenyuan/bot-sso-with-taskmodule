@@ -9,6 +9,7 @@ import {
   ConversationState,
   UserState,
   CardFactory,
+  TeamsInfo,
 } from "botbuilder";
 import { Utils } from "./helpers/utils";
 import { SSODialog } from "./helpers/ssoDialog";
@@ -50,6 +51,8 @@ export class TeamsBot extends TeamsActivityHandler {
 
     this.onMessage(async (context, next) => {
       console.log("Running with Message Activity.");
+      /// Frank edit
+      const channels = await TeamsInfo.getTeamChannels(context);
 
       let txt = context.activity.text;
       // remove the mention of this bot
